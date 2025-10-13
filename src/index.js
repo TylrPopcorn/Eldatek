@@ -43,11 +43,11 @@ root.render(
         {/* ROUTES */}
         <Route path="/" element={<Homepage />} />
 
-        <Route exact path="contact" element={<HelathCheck />} />
+        <Route exact path="/#contact" element={<HelathCheck />} />
 
-        <Route exact path="services" element={<Services />} />
+        <Route exact path="/#services" element={<Services />} />
 
-        <Route exact path="about" element={<About />} />
+        <Route exact path="/#about" element={<About />} />
 
         {/* ----- Catch all unknown pages ----- */}
         <Route path="*" element={<Redirect />} />
