@@ -1,0 +1,102 @@
+/** FOOTER RELATED SCSS **/
+
+//======= VARIABLES
+@use "variables" as vars; //GLOBAL VARIABLES
+
+nav {
+  background-color: #000;
+  border-top: 2px solid vars.$mainColor;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.493);
+  z-index: 9;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .WRAPPER {
+    height: 100%;
+    width: 100%;
+    max-width: vars.$max-width;
+  }
+
+  .content {
+    padding: 10px 3%;
+    display: flex;
+
+    .navbar-brand {
+      min-width: 100px;
+      height: 60px;
+      padding: 0;
+
+      .logo-img {
+        background: url("/src/imgs/Logo2.png") center center/contain no-repeat;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .navbar-toggler {
+      background-color: vars.$mainColor;
+    }
+
+    .navbar-collapse {
+      .navbar-nav {
+        font-family: vars.$header-text;
+
+        gap: 15px;
+
+        //RESPONSIVE
+        @media (max-width: 990px) {
+          padding: 15px 30px;
+        }
+
+        //RESPONSIVE
+        @media (max-width: 600px) {
+          text-align: center;
+        }
+      }
+
+      .nav-link {
+        color: #fff;
+        font-size: 14px;
+        padding-top: 10px;
+        font-weight: lighter;
+
+        &:hover {
+          color: vars.$mainColor;
+        }
+        &.active {
+          color: vars.$mainColor;
+          text-shadow: 0px 0px 20px vars.$mainColor;
+          font-weight: bolder;
+        }
+      }
+
+      .btn-health-check {
+        background-color: vars.$mainColor;
+        font-family: vars.$header-text;
+
+        color: white;
+        border-radius: 20px;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: vars.$mainColor2;
+        }
+
+        //RESPONSIVE
+        @media (max-width: 990px) {
+          margin-left: 30px;
+        }
+      }
+
+      //RESPONSIVE
+      @media (max-width: 600px) {
+        text-align: center;
+      }
+    }
+  }
+}
