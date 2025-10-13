@@ -2,6 +2,40 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 function Footer() {
+   //
+  //
+  const handleSubmit = () => {
+    // Wait a bit so FormSubmit can open success page in new tab
+    setTimeout(() => {
+      window.location.href = "/";
+    }, 1000);
+  };
+  //
+  //
+  
+  const handleClick = (e, id) => {
+  e.preventDefault(); // stop reload
+
+  if (id === "Home") {
+    // If Home, always go back to homepage
+    if (window.location.hash === "#/" || window.location.hash === "") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      window.location.href = "/#/";
+    }
+    return;
+  }
+
+  const section = document.getElementById(id);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  } else {
+    // fallback if not on homepage
+    window.location.href = "/#/";
+  }
+};
+
+  //--------
   return (
     <footer className="Footer">
       <div className="WRAPPER">
@@ -26,13 +60,13 @@ function Footer() {
             <Link to="/" className="home">
               Home
             </Link>
-            <Link to="/#about" className="about">
+            <Link to="/about" className="about">
               About
             </Link>
-            <Link to="/#services" className="services">
+            <Link to="/services" className="services">
               Services
             </Link>
-            <Link to="/#contact" className="IT-health-check">
+            <Link to="/contact" className="IT-health-check">
               IT Health Check
             </Link>
           </div>
@@ -51,7 +85,7 @@ function Footer() {
             </div>
             <p>Subscribe to our newsletter.</p>
             <div className="inputBox">
-              <form class="email-form">
+              <form class="email-form"  onSubmit={handleSubmit}>
                 <input
                   type="email"
                   id="email"
@@ -71,6 +105,7 @@ function Footer() {
 }
 
 export default Footer;
+
 
 
 
