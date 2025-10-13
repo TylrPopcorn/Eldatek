@@ -34,7 +34,7 @@ function Footer() {
             </Link>
             <Link to="/#contact" className="IT-health-check">
               IT Health Check
-            </a>
+            </Link>
           </div>
           {/**-----------------**/}
           <div className="item contact col">
@@ -71,5 +71,6 @@ function Footer() {
 }
 
 export default Footer;
+
 
 
