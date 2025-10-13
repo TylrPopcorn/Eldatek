@@ -53,6 +53,6 @@ root.render(
         <Route path="*" element={<Redirect />} />
         {/*----------------------------*/}
       </Routes>
-    <HashRouter>
+        </HashRouter>
   </MyContextProvider>
 );
