@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Footer() {
    //
@@ -57,18 +56,18 @@ function Footer() {
             <div className="header-section">
               <h6 className="header">QUICK LINKS</h6>
             </div>
-            <Link to="/" className="home">
+            <a href="#Home" className="home"  onClick={(e) => handleClick(e, "Home")}>
               Home
-            </Link>
-            <Link to="/about" className="about">
+            </a>
+            <a href="#About" className="about"  onClick={(e) => handleClick(e, "About")}>
               About
-            </Link>
-            <Link to="/services" className="services">
+            </a>
+            <a href="#Services" className="services"  onClick={(e) => handleClick(e, "Services")}>
               Services
-            </Link>
-            <Link to="/contact" className="IT-health-check">
+            </a>
+            <a href="#Contact" className="IT-health-check"  onClick={(e) => handleClick(e, "Contact")}>
               IT Health Check
-            </Link>
+            </a>
           </div>
           {/**-----------------**/}
           <div className="item contact col">
@@ -105,6 +104,7 @@ function Footer() {
 }
 
 export default Footer;
+
 
 
 
