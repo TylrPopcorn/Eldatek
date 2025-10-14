@@ -1,4 +1,5 @@
 import React, { useContext, useEffect } from "react";
+
 //components:
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -76,7 +77,7 @@ function Services() {
                       compliance.
                     </div>
                   </div>
-                  <a href="#price">
+                  <a href="/#price">
                     <button className="pricing">Pricing</button>
                   </a>
                 </div>
@@ -110,7 +111,7 @@ function Services() {
                       <span>&bull; </span> Secure document sharing.
                     </div>
                   </div>
-                  <a href="#price">
+                  <a href="/#price">
                     <button className="pricing">Pricing</button>
                   </a>
                 </div>
@@ -142,7 +143,7 @@ function Services() {
                       <span>&bull; </span> Proactive monitoring and support.
                     </div>
                   </div>
-                  <a href="#price">
+                  <a href="/#price">
                     <button className="pricing">Pricing</button>
                   </a>
                 </div>
@@ -180,7 +181,7 @@ function Services() {
                   <p className="desc">3 users</p>
                 </div>
                 <div className="button-section">
-                  <a href="/contact">
+                  <a href="/#contact">
                     <button>$450/month</button>
                   </a>
                 </div>
@@ -192,7 +193,7 @@ function Services() {
                   <p className="desc">10 users</p>
                 </div>
                 <div className="button-section">
-                  <a href="/contact">
+                  <a href="/#contact">
                     <button className="white">$1,500/month</button>
                   </a>
                 </div>
@@ -204,7 +205,7 @@ function Services() {
                   <p className="desc">5 users</p>
                 </div>
                 <div className="button-section">
-                  <a href="/contact">
+                  <a href="/#contact">
                     <button>$750/month</button>
                   </a>
                 </div>
@@ -221,3 +222,4 @@ function Services() {
 }
 
 export default Services;
+
