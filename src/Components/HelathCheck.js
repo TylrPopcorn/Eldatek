@@ -12,7 +12,7 @@ function HealthCheck() {
     e.preventDefault();
     setTimeout(() => {
       window.location.pathname = "/";
-    }, 2000);
+    }, 1000);
   };
   //
   //
@@ -87,7 +87,7 @@ function HealthCheck() {
               </div>
 
               <div className="formWrapper">
-                <form onSubmit={handleFormSubmit}>
+                <form  method="POST" onSubmit={handleFormSubmit}>
                   <label className="Name">Name:</label>
                   <input
                     placeholder="Full Name"
@@ -170,6 +170,7 @@ function HealthCheck() {
 }
 
 export default HealthCheck;
+
 
 
 
