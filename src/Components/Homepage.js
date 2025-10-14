@@ -24,7 +24,7 @@ function Homepage() {
       {/** --------- */}
 
       {/** HERO SECTION */}
-      <div className="Hero-Section">
+      <div className="Hero-Section" id="Home">
         <div className="WRAPPER">
           <div className="img">
             <div className="content">
