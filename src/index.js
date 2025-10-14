@@ -1,4 +1,4 @@
-//dependencies
+//====================dependencies
 // npm install react
 // npm install react-router-dom
 // npm install --save-dev sass  <-- SCSS
@@ -10,7 +10,7 @@ import ReactDOM from "react-dom/client";
 import { HashRouter, Routes, Route } from "react-router-dom";
 //----    ----    ----
 
-//styles:
+//====================styles:
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import "bootstrap/dist/js/bootstrap.bundle.min.js"; //Bootstrap JS
 //
@@ -24,7 +24,7 @@ import "./Styles/global.css";
 
 //----    ----    ----
 
-//components:
+//==================components:
 import Homepage from "./Components/Homepage";
 import HelathCheck from "./Components/HelathCheck";
 import Services from "./Components/Services";
@@ -33,26 +33,30 @@ import About from "./Components/About";
 //--
 import MyContextProvider from "./state/Context";
 import Redirect from "./Components/Redirect";
+import ScrollToTop from "./Components/ScrollToTop";
 
-//START:
+//=================START:
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <MyContextProvider>
-    <HashRouter>
-      <Routes>
-        {/* ROUTES */}
-        <Route path="/" element={<Homepage />} />
+  <React.StrictMode>
+    <MyContextProvider>
+      <HashRouter>
+        <ScrollToTop />
+        <Routes>
+          {/* ROUTES */}
+          <Route path="/" element={<Homepage />} />
 
-        <Route exact path="/contact" element={<HelathCheck />} />
+          <Route exact path="/contact" element={<HelathCheck />} />
 
-        <Route exact path="/services" element={<Services />} />
+          <Route exact path="/services" element={<Services />} />
 
-        <Route exact path="/about" element={<About />} />
+          <Route exact path="/about" element={<About />} />
 
-        {/* ----- Catch all unknown pages ----- */}
-        <Route path="*" element={<Redirect />} />
-        {/*----------------------------*/}
-      </Routes>
-        </HashRouter>
-  </MyContextProvider>
+          {/* ----- Catch all unknown pages ----- */}
+          <Route path="*" element={<Redirect />} />
+          {/*----------------------------*/}
+        </Routes>
+      </HashRouter>
+    </MyContextProvider>
+  </React.StrictMode>
 );
