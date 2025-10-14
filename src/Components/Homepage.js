@@ -259,7 +259,7 @@ function Homepage() {
                 Today
               </h1>
               <div className="buttons">
-                <a href="/contact">
+                <a href="/#contact">
                   <button className="quote">Get a Custom Quote</button>
                 </a>
                 <a href="/#contact">
