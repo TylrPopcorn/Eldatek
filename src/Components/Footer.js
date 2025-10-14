@@ -1,75 +1,61 @@
 import React from "react";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function Footer() {
-   //
-  //
-  const handleSubmit = () => {
-    // Wait a bit so FormSubmit can open success page in new tab
-    setTimeout(() => {
-      window.location.href = "/";
-    }, 1000);
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setTimeout(() => navigate("/"), 1000);
   };
-  //
-  //
-  
+
   const handleClick = (e, id) => {
-  e.preventDefault(); // stop reload
+    e.preventDefault();
 
-  if (id === "Home") {
-    // If Home, always go back to homepage
-    if (window.location.hash === "/" || window.location.hash === "") {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    } else {
-      window.location.href = "/#/";
+    // If we're not on the homepage, navigate first
+    if (location.pathname !== "/") {
+      navigate("/", { replace: false });
+      // Wait for navigation to finish before scrolling
+      setTimeout(() => {
+        const section = document.getElementById(id);
+        if (section) section.scrollIntoView({ behavior: "smooth" });
+      }, 300);
+      return;
     }
-    return;
-  }
 
-  const section = document.getElementById(id);
-  if (section) {
-    section.scrollIntoView({ behavior: "smooth" });
-  } else {
-    // fallback if not on homepage
-    window.location.href = "/#/";
-  }
-};
+    // If we're already home, just scroll
+    const section = document.getElementById(id);
+    if (section) section.scrollIntoView({ behavior: "smooth" });
+  };
 
-  //--------
   return (
     <footer className="Footer">
       <div className="WRAPPER">
         <div className="content row">
-          {/**-----------------**/}
           <div className="item logo col">
             <div className="logo-icon"></div>
           </div>
+
           <div className="item socials col">
             <div className="header-section">
               <h6 className="header">SOCIALS</h6>
             </div>
-            <a href="" className="instagram"></a>
-            <a href="" className="facebook"></a>
-            <a href="" className="linkedin"></a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="instagram"></a>
+            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="facebook"></a>
+            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="linkedin"></a>
           </div>
-          {/**-----------------**/}
+
           <div className="item links col">
             <div className="header-section">
               <h6 className="header">QUICK LINKS</h6>
             </div>
-            <a href="/" className="home"  onClick={(e) => handleClick(e, "Home")}>
-              Home
-            </a>
-            <a href="/#About" className="about"  onClick={(e) => handleClick(e, "About")}>
-              About
-            </a>
-            <a href="/#Services" className="services"  onClick={(e) => handleClick(e, "Services")}>
-              Services
-            </a>
-            <a href="/#Contact" className="IT-health-check"  onClick={(e) => handleClick(e, "Contact")}>
-              IT Health Check
-            </a>
+            <a href="/" onClick={(e) => handleClick(e, "top")}>Home</a>
+            <a href="/#about" onClick={(e) => handleClick(e, "About")}>About</a>
+            <a href="/#services" onClick={(e) => handleClick(e, "Services")}>Services</a>
+            <a href="/#contact" onClick={(e) => handleClick(e, "Contact")}>IT Health Check</a>
           </div>
-          {/**-----------------**/}
+
           <div className="item contact col">
             <div className="header-section">
               <h6 className="header">CONTACT</h6>
@@ -77,14 +63,14 @@ function Footer() {
             <p className="email">support@eldatek.com</p>
             <p className="phone">(XXX) XXX-XXXX</p>
           </div>
-          {/**-----------------**/}
+
           <div className="item subscribe col">
             <div className="header-section">
               <h6 className="header">STAY UP TO DATE</h6>
             </div>
             <p>Subscribe to our newsletter.</p>
             <div className="inputBox">
-              <form class="email-form"  onSubmit={handleSubmit}>
+              <form className="email-form" onSubmit={handleSubmit}>
                 <input
                   type="email"
                   id="email"
@@ -92,7 +78,7 @@ function Footer() {
                   placeholder="Email"
                   required
                 />
-                <button className="arrow"></button>
+                <button className="arrow" type="submit"></button>
               </form>
             </div>
           </div>
@@ -104,9 +90,3 @@ function Footer() {
 }
 
 export default Footer;
-
-
-
-
-
-
