@@ -77,7 +77,7 @@ function Services() {
                       compliance.
                     </div>
                   </div>
-                  <a href="#price">
+                  <a href="#/services#price">
                     <button className="pricing">Pricing</button>
                   </a>
                 </div>
@@ -111,7 +111,7 @@ function Services() {
                       <span>&bull; </span> Secure document sharing.
                     </div>
                   </div>
-                  <a href="#price">
+                  <a href="#/services#price">
                     <button className="pricing">Pricing</button>
                   </a>
                 </div>
@@ -143,7 +143,7 @@ function Services() {
                       <span>&bull; </span> Proactive monitoring and support.
                     </div>
                   </div>
-                  <a href="#price">
+                  <a href="#/services#price">
                     <button className="pricing">Pricing</button>
                   </a>
                 </div>
@@ -222,5 +222,6 @@ function Services() {
 }
 
 export default Services;
+
 
 
