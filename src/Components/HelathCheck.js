@@ -139,7 +139,7 @@ function HealthCheck() {
                   ></textarea>
 
                   <div className="buttonWrapper">
-                    <button  type="submit">Schedule</button>
+                    <button type="submit">Schedule</button>
                   </div>
                 </form>
               </div>
@@ -170,6 +170,7 @@ function HealthCheck() {
 }
 
 export default HealthCheck;
+
 
 
 
