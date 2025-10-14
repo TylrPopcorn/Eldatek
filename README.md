@@ -27,6 +27,5 @@ Live: https://eldatek.onrender.com/
 - SCSS - https://sass-lang.com/
 - BootStrap - https://getbootstrap.com/
 
-<br></br>
 <img width="1190" height="923" alt="image" src="https://github.com/user-attachments/assets/f311588c-5227-484a-9cc1-8b92e696b577" />
 
