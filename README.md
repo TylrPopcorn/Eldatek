@@ -7,8 +7,10 @@ Live: N/A
 
 -----
 ## Project Setup
-- [ ] Run `npm install` to install your dependencies.
-- [ ] Run `npm run start` to start the application.
+- [ ] `download` project to computer and open with Visual Studio Code.
+- [ ] Open the terminal.
+- [ ] Type `npm install` to install your dependencies.
+- [ ] Type `npm run start` to start the application.
 <br>
 
 # Deployment:
@@ -18,6 +20,7 @@ Live: N/A
 - Figma - https://www.figma.com/
  
 # Build:
+- Visual Studio Code: https://code.visualstudio.com/
 - JavaScript - https://www.javascript.com/
 - React.js - https://react.dev/
 - CSS - https://web.dev/css
