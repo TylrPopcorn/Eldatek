@@ -7,7 +7,7 @@ function Navbar() {
   const navbar = data.navbar;
 
   return (
-    <nav className="navbar navbar-expand-lg fixed-top" id="Home">
+    <nav className="navbar navbar-expand-lg fixed-top" >
       <div className="content container-fluid WRAPPER">
         <a className="navbar-brand" href="/">
           <div className="logo-img"></div>
@@ -60,4 +60,5 @@ function Navbar() {
 }
 
 export default Navbar;
+
 
