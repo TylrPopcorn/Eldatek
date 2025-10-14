@@ -87,7 +87,7 @@ function HealthCheck() {
               </div>
 
               <div className="formWrapper">
-                <form onSubmit={handleFormSubmit}>
+                <form>
                   <label className="Name">Name:</label>
                   <input
                     placeholder="Full Name"
@@ -139,7 +139,7 @@ function HealthCheck() {
                   ></textarea>
 
                   <div className="buttonWrapper">
-                    <button type="submit">Schedule</button>
+                    <button onClick={handleFormSubmit} type="submit">Schedule</button>
                   </div>
                 </form>
               </div>
@@ -170,4 +170,5 @@ function HealthCheck() {
 }
 
 export default HealthCheck;
+
 
