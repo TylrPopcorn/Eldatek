@@ -5,6 +5,11 @@ Live: N/A
 
 ![Page15](https://github.com/user-attachments/assets/c7ddbdd9-77dc-47a1-8463-fddba6de28a4)
 
+-----
+## Project Setup
+- [ ] Run `npm install` to install your dependencies.
+- [ ] Run `npm run start` to start the application.
+<br>
 
 # Deployment:
 - N/A
