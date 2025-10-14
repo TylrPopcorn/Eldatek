@@ -17,7 +17,7 @@ function Footer() {
 
   if (id === "Home") {
     // If Home, always go back to homepage
-    if (window.location.hash === "#/" || window.location.hash === "") {
+    if (window.location.hash === "/" || window.location.hash === "") {
       window.scrollTo({ top: 0, behavior: "smooth" });
     } else {
       window.location.href = "/#/";
@@ -56,16 +56,16 @@ function Footer() {
             <div className="header-section">
               <h6 className="header">QUICK LINKS</h6>
             </div>
-            <a href="#Home" className="home"  onClick={(e) => handleClick(e, "Home")}>
+            <a href="/" className="home"  onClick={(e) => handleClick(e, "Home")}>
               Home
             </a>
-            <a href="#About" className="about"  onClick={(e) => handleClick(e, "About")}>
+            <a href="/#About" className="about"  onClick={(e) => handleClick(e, "About")}>
               About
             </a>
-            <a href="#Services" className="services"  onClick={(e) => handleClick(e, "Services")}>
+            <a href="/#Services" className="services"  onClick={(e) => handleClick(e, "Services")}>
               Services
             </a>
-            <a href="#Contact" className="IT-health-check"  onClick={(e) => handleClick(e, "Contact")}>
+            <a href="/#Contact" className="IT-health-check"  onClick={(e) => handleClick(e, "Contact")}>
               IT Health Check
             </a>
           </div>
@@ -104,6 +104,7 @@ function Footer() {
 }
 
 export default Footer;
+
 
 
 
