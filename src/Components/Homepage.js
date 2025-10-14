@@ -16,7 +16,7 @@ function Homepage() {
 
   useEffect(() => {
     Dispatch({ navbar: 1 });
-  }, [Dispatch]);
+  }, []);
 
   return (
     <div className="Homepage">
