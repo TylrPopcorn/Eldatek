@@ -6,6 +6,16 @@ import Footer from "./Footer";
 
 //CONTACT US
 function HealthCheck() {
+  //
+  //
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    setTimeout(() => {
+      window.location.pathname = "/";
+    }, 2000);
+  };
+  //
+  //
   return (
     <div className="HealthCheck">
       <Navbar />
@@ -77,7 +87,7 @@ function HealthCheck() {
               </div>
 
               <div className="formWrapper">
-                <form>
+                <form onSubmit={handleFormSubmit}>
                   <label className="Name">Name:</label>
                   <input
                     placeholder="Full Name"
@@ -160,3 +170,4 @@ function HealthCheck() {
 }
 
 export default HealthCheck;
+
