@@ -13,7 +13,7 @@ function ABOUT() {
 
   useEffect(() => {
     Dispatch({ navbar: 2 });
-  }, [Dispatch]);
+  }, []);
 
   return (
     <div className="About">
@@ -138,5 +138,6 @@ function ABOUT() {
 }
 
 export default ABOUT;
+
 
 
