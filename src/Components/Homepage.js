@@ -24,7 +24,7 @@ function Homepage() {
       {/** --------- */}
 
       {/** HERO SECTION */}
-      <div className="Hero-Section" id="Home">
+      <div className="Hero-Section">
         <div className="WRAPPER">
           <div className="img">
             <div className="content">
@@ -37,7 +37,7 @@ function Homepage() {
                 Affordable, reliable, and tailored for contractors and small
                 businesses.
               </p>
-              <a href="/#about">
+              <a href="/about">
                 <button>Learn More</button>
               </a>
             </div>
@@ -259,10 +259,10 @@ function Homepage() {
                 Today
               </h1>
               <div className="buttons">
-                <a href="/#contact">
+                <a href="/contact">
                   <button className="quote">Get a Custom Quote</button>
                 </a>
-                <a href="/#contact">
+                <a href="/contact">
                   <button className="schedule">
                     Schedule a FREE IT Health Check
                   </button>
