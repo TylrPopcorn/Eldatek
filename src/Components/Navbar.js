@@ -36,7 +36,7 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className={`nav-link ${navbar === 2 ? "active" : ""}`}
-                href="/about"
+                href="/#about"
               >
                 ABOUT
               </a>
@@ -44,13 +44,13 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className={`nav-link ${navbar === 3 ? "active" : ""}`}
-                href="/services"
+                href="/#services"
               >
                 SERVICES
               </a>
             </li>
           </ul>
-          <a href="/contact" className="btn btn-health-check">
+          <a href="/#contact" className="btn btn-health-check">
             Schedule a Free IT Health Check
           </a>
         </div>
@@ -60,3 +60,4 @@ function Navbar() {
 }
 
 export default Navbar;
+
