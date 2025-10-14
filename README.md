@@ -1,7 +1,7 @@
 # Eldatek
 A fully responsive and modern website, designed using Figma and built with React, SCSS, Bootstrap, and JavaScript to deliver a sleek UI, smooth performance, and cross-device compatibility.
 
-Live: N/A
+Live: https://eldatek.onrender.com/
 
 ![Page15](https://github.com/user-attachments/assets/c7ddbdd9-77dc-47a1-8463-fddba6de28a4)
 
@@ -14,7 +14,7 @@ Live: N/A
 <br>
 
 # Deployment:
-- N/A
+- https://render.com/
 
 # Design:
 - Figma - https://www.figma.com/
