@@ -22,16 +22,16 @@ function Footer() {
             <div className="header-section">
               <h6 className="header">QUICK LINKS</h6>
             </div>
-            <a href="/" className="contact">
+            <a href="/" className="home">
               Home
             </a>
-            <a href="/about" className="about">
+            <a href="/#about" className="about">
               About
             </a>
-            <a href="/services" className="services">
+            <a href="/#services" className="services">
               Services
             </a>
-            <a href="/contact" className="IT-health-check">
+            <a href="/#contact" className="IT-health-check">
               IT Health Check
             </a>
           </div>
@@ -70,3 +70,4 @@ function Footer() {
 }
 
 export default Footer;
+
