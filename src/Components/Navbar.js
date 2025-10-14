@@ -7,7 +7,7 @@ function Navbar() {
   const navbar = data.navbar;
 
   return (
-    <nav className="navbar navbar-expand-lg fixed-top" >
+    <nav className="navbar navbar-expand-lg fixed-top" id="Home">
       <div className="content container-fluid WRAPPER">
         <a className="navbar-brand" href="/">
           <div className="logo-img"></div>
@@ -36,7 +36,7 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className={`nav-link ${navbar === 2 ? "active" : ""}`}
-                href="/#about"
+                href="/about"
               >
                 ABOUT
               </a>
@@ -44,13 +44,13 @@ function Navbar() {
             <li className="nav-item">
               <a
                 className={`nav-link ${navbar === 3 ? "active" : ""}`}
-                href="/#services"
+                href="/services"
               >
                 SERVICES
               </a>
             </li>
           </ul>
-          <a href="/#contact" className="btn btn-health-check">
+          <a href="/contact" className="btn btn-health-check">
             Schedule a Free IT Health Check
           </a>
         </div>
@@ -60,5 +60,3 @@ function Navbar() {
 }
 
 export default Navbar;
-
-
