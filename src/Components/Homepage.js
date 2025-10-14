@@ -262,7 +262,7 @@ function Homepage() {
                 <a href="/#contact">
                   <button className="quote">Get a Custom Quote</button>
                 </a>
-                <a href="/contact">
+                <a href="/#contact">
                   <button className="schedule">
                     Schedule a FREE IT Health Check
                   </button>
