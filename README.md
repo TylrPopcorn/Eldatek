@@ -14,7 +14,7 @@ Live: https://eldatek.onrender.com/
 <br>
 
 # Deployment:
-- https://render.com/
+- Render - https://render.com/
 
 # Design:
 - Figma - https://www.figma.com/
